@@ -21,14 +21,13 @@ jobs:
           project: oriraccoon/firesensorserver
           stage: main
           yaml: |
-            name: fireuno
+            name: node-express
             app: node@16
             options:
               env:
                 - name: NODE_ENV
                   value: production
               ports: 3000
-              install: ""
             context:
               git:
                 url: git@github.com:${{ github.repository }}.git
